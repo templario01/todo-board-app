@@ -7,18 +7,20 @@ export interface TaskTableProps {
   tasks: Itask[]
   toggleTask: (task: Itask) => void
   showCompleted?: boolean
+  title: string
 }
 
 export const TaskTable: React.FC<TaskTableProps> = ({
   tasks,
   toggleTask,
   showCompleted = false,
+  title,
 }) => {
   return (
     <table className="table table-dark table-striped table-bordered border-secondary">
       <thead>
         <tr className="table-primary">
-          <th>Tasks</th>
+          <th>{title}</th>
         </tr>
       </thead>
       <tbody>

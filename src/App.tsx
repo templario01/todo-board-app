@@ -46,7 +46,7 @@ function App() {
     <main className="bg-dark vh-100 text-white">
       <Container>
         <TaskCreator createTask={createTask} />
-        <TaskTable tasks={taskItems} toggleTask={toggleTask} />
+        <TaskTable tasks={taskItems} toggleTask={toggleTask} title={'Todo'} />
         <VisibilityControl
           isChecked={showCompleted}
           setShowCompleted={(checked) => setShowCompleted(checked)}
@@ -57,6 +57,7 @@ function App() {
             tasks={taskItems}
             toggleTask={toggleTask}
             showCompleted={showCompleted}
+            title={'Done'}
           />
         )}
       </Container>
