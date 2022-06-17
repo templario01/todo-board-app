@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import './App.css'
 import { Container } from './components/Container'
 import { TaskCreator } from './components/TaskCreator'
 import { TaskTable } from './components/TaskTable'
